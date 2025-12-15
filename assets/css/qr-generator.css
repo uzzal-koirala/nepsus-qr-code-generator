@@ -1,0 +1,98 @@
+/* ===============================
+   NEPSUS QR CODE GENERATOR
+   =============================== */
+
+.nepsus-qr-wrapper {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+}
+
+/* Main Box */
+.nepsus-qr-wrapper .qr-box {
+    max-width: 420px;
+    margin: 30px auto;
+    padding: 30px;
+    border-radius: 16px;
+    background: #ffffff;
+    text-align: center;
+    box-shadow: 0 8px 30px rgba(0,0,0,0.10);
+}
+
+/* Title */
+.nepsus-qr-wrapper .qr-box h2 {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    color: #111;
+}
+
+/* Input */
+.nepsus-qr-wrapper #qr-input {
+    width: 100%;
+    padding: 14px;
+    border-radius: 10px;
+    border: 2px solid #3151FE;
+    font-size: 16px;
+    margin-bottom: 18px;
+    outline: none;
+}
+
+/* Buttons (Common) */
+.nepsus-qr-wrapper .qr-btn,
+.nepsus-qr-wrapper .download-btn,
+.nepsus-qr-wrapper .clear-btn {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #ffffff;
+    cursor: pointer;
+    transition: all 0.25s ease;
+    margin-top: 10px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Generate Button */
+.nepsus-qr-wrapper .qr-btn {
+    background: linear-gradient(135deg, #3151FE, #4F6BFF);
+    box-shadow: 0 6px 18px rgba(49,81,254,0.35);
+}
+
+.nepsus-qr-wrapper .qr-btn:hover {
+    transform: translateY(-2px);
+}
+
+/* Download Button */
+.nepsus-qr-wrapper .download-btn {
+    background: #3151FE;
+    display: none;
+}
+
+.nepsus-qr-wrapper .download-btn:hover {
+    background: #243cff;
+}
+
+/* Clear Button */
+.nepsus-qr-wrapper .clear-btn {
+    background: #FF3B3B;
+    display: none;
+}
+
+.nepsus-qr-wrapper .clear-btn:hover {
+    background: #d60000;
+}
+
+/* QR Output */
+.nepsus-qr-wrapper #qr-output {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.nepsus-qr-wrapper #qr-output canvas {
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 10px;
+}
